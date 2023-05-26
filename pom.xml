@@ -36,6 +36,18 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>standalone_release</name>
+			<url>http://3.82.162.181:8081/repository/standalone_release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>standalone_snapshot</name>
+			<url>http://3.82.162.181:8081/repository/standalone_snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
